@@ -1,0 +1,157 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Segoe UI', sans-serif;
+color: #333;
+background-color: #f5f5f5;
+line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+max-width: 1280px;
+width: 100%;
+margin: 0 auto;
+padding: 20px 40px;
+}
+
+/* Header */
+header {
+background: #1e1e1e;
+color: white;
+padding: 20px 0;
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.logo {
+font-size: 1.8rem;
+font-weight: bold;
+}
+.nav-links {
+list-style: none;
+display: flex;
+gap: 25px;
+flex-wrap: wrap;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+font-size: 1.1rem;
+}
+.nav-links a:hover {
+text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+background: #e3f2fd;
+min-height: 90vh;
+display: flex;
+align-items: center;
+}
+.hero .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+.hero-text {
+flex: 1 1 500px;
+}
+.hero-text h2 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+.hero-text p {
+font-size: 1.2rem;
+}
+.hero-img {
+flex: 1 1 300px;
+text-align: center;
+}
+.hero-img img {
+width: 300px;
+max-width: 100%;
+border-radius: 50%;
+}
+.btn {
+display: inline-block;
+margin-top: 25px;
+padding: 12px 28px;
+background: #1976d2;
+color: white;
+border-radius: 5px;
+text-decoration: none;
+font-size: 1rem;
+}
+.btn:hover {
+background: #0d47a1;
+}
+
+/* About, Contact, Projects Sections */
+.about, .contact, .projects {
+background: #fff;
+padding: 60px 0;
+}
+.about h2, .contact h2, .projects h2 {
+font-size: 2.5rem;
+margin-bottom: 25px;
+}
+.about p, .contact p {
+font-size: 1.15rem;
+max-width: 1000px;
+}
+
+/* Projects Grid */
+.project-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+margin-top: 20px;
+}
+.project-card {
+background: #f9f9f9;
+border-left: 5px solid #1976d2;
+padding: 20px;
+border-radius: 10px;
+flex: 1 1 calc(33.333% - 30px);
+min-width: 280px;
+}
+.project-card h3 {
+margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+background: #1e1e1e;
+color: #ccc;
+text-align: center;
+padding: 25px 0;
+font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+.hero .container {
+    flex-direction: column;
+    text-align: center;
+}
+.nav-links {
+    justify-content: center;
+    gap: 15px;
+}
+.project-grid {
+    flex-direction: column;
+}
+}
+  
